@@ -1,0 +1,17 @@
+@media (max-width: 630px) {
+    .links {
+        padding: 20px;
+    }
+
+    .description {
+        font-size: 8px;
+        color: aqua;
+    }
+
+    .items {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image img {}
+}
