@@ -203,6 +203,7 @@ header {
   transform: translateY(0) rotate(-45deg);
 }
 
+/* changed in responsive version */
 .container.active .main {
   animation: main-animation 0.5s ease;
   cursor: pointer;
@@ -251,7 +252,6 @@ ul {
 }
 
 .links a:hover {
-  /* color: #fff; */
   color: var(--secondary);
 }
 
@@ -389,7 +389,7 @@ ul {
 }
 
 .description {
-  font-size: 20px;
+  font-size: 30px;
   margin-top: 10px;
   margin-bottom: 50px;
 }
@@ -520,4 +520,42 @@ ul {
   position: absolute;
   right: 2%;
   bottom: 5%;
+}
+
+
+/* Typing */
+
+.cursor {
+  display: inline-block;
+  background-color: var(--primary);
+  margin-left: 0.1rem;
+  width: 2px;
+  animation: blink 1s infinite;
+}
+
+span.cursor.typing {
+  animation: none;
+}
+
+/* animate typing text in home page */
+@keyframes blink {
+  0% {
+    background-color: var(--primary);
+  }
+
+  49% {
+    background-color: var(--primary);
+  }
+
+  50% {
+    background-color: transparent;
+  }
+
+  99% {
+    background-color: transparent;
+  }
+
+  100% {
+    background-color: var(--primary);
+  }
 }

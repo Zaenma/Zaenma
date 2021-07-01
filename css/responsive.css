@@ -1,17 +1,53 @@
-@media (max-width: 630px) {
-    .links {
-        padding: 20px;
+@media (max-width: 600px) {
+    .menu {
+        color: var(--primary);
+    }
+
+    .page {
+        width: 100vw;
     }
 
     .description {
-        font-size: 8px;
-        color: aqua;
+        font-size: 20px;
     }
 
     .items {
-        display: flex;
+        text-align: center;
+        margin-top: 20%;
         flex-direction: column;
     }
 
-    .image img {}
+
+    .image img {
+        width: 80vw;
+        margin-left: 20px;
+        margin-right: 20px;
+        position: absolute;
+        /* top: 150px; */
+        right: 0;
+    }
+
+    .container.active .main {
+        transform: perspective(1300px) rotateY(20deg) translateZ(110px) scale(0.5);
+    }
+
+    .container.active .shadow.one {
+        animation: shadow-one 0.6s ease-out;
+        transform: perspective(1300px) rotateY(20deg) translateZ(40px) scale(0.5);
+    }
+
+    .container.active .shadow.two {
+        animation: shadow-two 0.6s ease-out;
+        transform: perspective(1300px) rotateY(20deg) translateZ(70px) scale(0.5);
+    }
+
+    .container.active .main:hover+.shadow.one {
+        transform: perspective(1300px) rotateY(20deg) translateZ(20px) scale(0.5);
+    }
+
+    .container.active .main:hover {
+        transform: perspective(1300px) rotateY(20deg) translateZ(140px) scale(0.5);
+    }
+
+
 }
