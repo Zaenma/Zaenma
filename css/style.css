@@ -357,10 +357,11 @@
 
  /* Styles général */
 
+
  .section-group {
    display: flex;
    /* flex-wrap: wrap; */
-   margin-inline: 10px;
+   margin-inline: 20px;
  }
 
  .information {
@@ -466,42 +467,15 @@
    color: var(--dark);
  }
 
- .form-group {
-   display: flex;
-
-   flex-direction: column;
-   margin-bottom: 10px;
- }
-
- .input-form {
-   padding: 10px;
-   color: var(--white);
-   font-size: 20px;
-   background-color: var(--dark);
-   border-radius: 3px;
-   margin-inline: 5px;
- }
-
-
- .label-form {
-   margin-bottom: 5px;
- }
-
- .input-group {
-   display: flex;
-   flex-wrap: wrap;
-
- }
-
- .content {
-   display: flex;
-   flex-wrap: wrap;
-   align-items: center;
- }
 
  /* --------------------- about -------------------- */
- .about-section .page {
-   width: 98vw;
+ .page.about {
+   width: 90vw;
+
+ }
+
+ .about-text {
+   margin-top: 20px;
  }
 
  .section-1 img {
@@ -511,7 +485,8 @@
  }
 
  .name {
-   font-size: 35px;
+   font-size: 45px;
+   font-weight: bold;
    margin-bottom: 5px;
    color: var(--primary);
  }
@@ -565,4 +540,31 @@
    100% {
      background-color: var(--primary);
    }
+ }
+
+ /* Mes compétences */
+
+ .progressions {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+ }
+
+ .groupe {
+   /* width: 30%; */
+   /* text-align: center; */
+ }
+
+ .groupe i {
+   border: 2px solid var(--primary);
+   padding: 20px;
+   align-items: center;
+   border-radius: 50%;
+   filter: alpha(opacity=80);
+   -moz-opacity: 0.8;
+   opacity: 0.8;
+   /* float: left; */
+   /* margin: 20px; */
+   transition: all 0.4s ease;
+   /* shape-outside: circle(); */
  }

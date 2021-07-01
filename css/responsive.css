@@ -1,4 +1,6 @@
 @media (max-width: 600px) {
+
+    /* --------------- home page ----------- */
     .menu {
         color: var(--primary);
     }
@@ -10,6 +12,21 @@
 
     .description {
         font-size: 20px;
+    }
+
+
+    /* ---------------- About page ------------------ */
+    /* .about .section-groupe {
+        display: flex;
+    } */
+
+    .name {
+        font-size: 23px;
+        font-weight: bold;
+    }
+
+    .cached-text {
+        display: none;
     }
 
     .container.active .main {
@@ -38,6 +55,22 @@
 @media (max-width: 400px) {
     .btn {
         padding: 10px 30px;
+    }
+
+    .section-1 img {
+        width: 20vw;
+        /* float: left; */
+    }
+}
+
+@media (max-width: 414px) {
+    .about-section {
+        padding-right: 100px;
+    }
+
+    .section-1 img {
+        width: 130px;
+        margin-left: -30px;
     }
 }
 
