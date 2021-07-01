@@ -14,7 +14,6 @@
         font-size: 20px;
     }
 
-
     /* ---------------- About page ------------------ */
     /* .about .section-groupe {
         display: flex;
@@ -61,6 +60,25 @@
         width: 20vw;
         /* float: left; */
     }
+
+    .description-contact {
+        margin-top: 100px;
+        font-size: 15px;
+    }
+
+    .promesse {
+        margin-bottom: 10px;
+    }
+
+    .welcome {
+        margin-top: 10px;
+        font-size: 30px;
+    }
+
+    .infos-contact {
+        font-size: 15px;
+        /* margin-bottom: 5px; */
+    }
 }
 
 @media (max-width: 414px) {
@@ -80,3 +98,5 @@
         display: none;
     }
 }
+
+@media (max-width: 640px) {}

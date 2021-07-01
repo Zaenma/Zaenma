@@ -467,8 +467,39 @@
    color: var(--dark);
  }
 
+ .description-contact {
+   font-size: 20px;
+   margin-bottom: 40px;
+ }
+
+ .promesse {
+   color: var(--secondary);
+   margin-bottom: 30px;
+ }
+
+ .welcome {
+   color: var(--secondary);
+   font-weight: bold;
+   margin-top: 30px;
+   font-size: 30px;
+ }
+
+ .infos-contact {
+   font-size: 20px;
+ }
+
+ .infos-contact i {
+   color: var(--primary);
+   margin-right: 20px;
+ }
+
+ .infos-contact p {
+   margin-bottom: 20px;
+ }
 
  /* --------------------- about -------------------- */
+
+
  .page.about {
    width: 90vw;
 
@@ -505,7 +536,7 @@
  }
 
 
- /* Typing */
+ /* ---------------------- Typing  ------------------------ */
 
  .cursor {
    display: inline-block;
@@ -547,11 +578,13 @@
  .progressions {
    display: flex;
    flex-wrap: wrap;
+   width: 100vw;
    flex-direction: row;
+   background-color: aqua;
  }
 
  .groupe {
-   /* width: 30%; */
+   width: 30%;
    /* text-align: center; */
  }
 
