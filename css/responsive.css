@@ -4,27 +4,27 @@
     }
 
     .page {
-        width: 100vw;
+        width: 90vw;
     }
 
     .description {
         font-size: 20px;
     }
 
-    .items {
+    .home-section {
         text-align: center;
-        margin-top: 20%;
+        margin-top: 20vh;
         flex-direction: column;
     }
 
 
     .image img {
-        width: 80vw;
+        width: 60vw;
         margin-left: 20px;
         margin-right: 20px;
         position: absolute;
-        /* top: 150px; */
-        right: 0;
+        top: 100px;
+        right: 15%;
     }
 
     .container.active .main {
@@ -48,6 +48,16 @@
     .container.active .main:hover {
         transform: perspective(1300px) rotateY(20deg) translateZ(140px) scale(0.5);
     }
+}
 
+@media (max-width: 400px) {
+    .image {
+        /* display: none; */
+    }
+}
 
+@media (max-width: 333px) {
+    .home-section {
+        margin-top: 20px;
+    }
 }
