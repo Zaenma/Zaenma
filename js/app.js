@@ -48,7 +48,7 @@ function animateBule() {
   bule.style.setProperty("--left", Math.random() * 100 * plusOuMoins + "%"); 
 }
 
-setInterval(animateBule, 400);
+//setInterval(animateBule, 400);
 
 btn_contact();
 
