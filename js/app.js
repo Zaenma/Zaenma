@@ -15,11 +15,6 @@ const pages = document.getElementsByClassName('page');
 const contact = document.getElementById('contact');
 const btn = document.querySelector('.btn');
 
-const mai_container = document.querySelector('.main-container');
-
-// bule = mai_container.createElement('span');
-console.log(mai_container);
-
 function btn_contact() {
   btn.addEventListener('click', (event)=>{
     event.preventDefault();
@@ -36,7 +31,27 @@ function btn_contact() {
   })
 }
 
+function animateBule() {
+  const bule = document.createElement("span");
+
+  bule.classList.add("bule");
+  document.body.appendChild(bule);
+  
+  const taille = Math.random() * 100 + 100 + "px";
+  bule.style.height = taille;
+  bule.style.width = taille;
+  bule.style.top = Math.random() * 100 + 50 + "%";
+  bule.style.left = Math.random() * 100 + "%";
+  
+  const plusOuMoins = Math.random() > 0.5 ? 1 : -1;
+  
+  bule.style.setProperty("--left", Math.random() * 100 * plusOuMoins + "%"); 
+}
+
+setInterval(animateBule, 400);
+
 btn_contact();
+
 
 function menu_click() {
   
