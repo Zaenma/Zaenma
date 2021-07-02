@@ -357,6 +357,23 @@
 
  /* Styles général */
 
+ .bule {
+   position: absolute;
+   border-radius: 300px;
+   background: var(--purple);
+   opacity: 0;
+   filter: hue-rotate(0deg);
+   animation: 8s anim forwards;
+ }
+
+ @keyframes anim {
+   to {
+     top: -350px;
+     opacity: 0.1;
+     left: var(--left);
+     filter: hue-rotate(720deg);
+   }
+ }
 
  .section-group {
    display: flex;
@@ -577,15 +594,16 @@
 
  .progressions {
    display: flex;
-   flex-wrap: wrap;
-   width: 100vw;
    flex-direction: row;
-   background-color: aqua;
+   flex-wrap: wrap;
+   align-items: center;
+   width: 100vw;
  }
 
  .groupe {
+   display: flex;
    width: 30%;
-   /* text-align: center; */
+   align-items: center;
  }
 
  .groupe i {
@@ -596,8 +614,24 @@
    filter: alpha(opacity=80);
    -moz-opacity: 0.8;
    opacity: 0.8;
-   /* float: left; */
-   /* margin: 20px; */
+   float: left;
+   margin: 20px 20px 20px 0;
    transition: all 0.4s ease;
    /* shape-outside: circle(); */
+ }
+
+ .titre-competence {
+   color: var(--secondary);
+   font-size: 20px;
+   margin-bottom: 5px;
+   font-weight: bolder;
+ }
+
+ .skills-description {
+   font-size: 20px;
+   margin-bottom: 20px;
+ }
+
+ .senior {
+   color: var(--secondary);
  }
